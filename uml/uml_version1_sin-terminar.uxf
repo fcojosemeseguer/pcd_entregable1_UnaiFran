@@ -1,175 +1,264 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>6</zoom_level>
+  <zoom_level>3</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>138</x>
-      <y>18</y>
-      <w>126</w>
-      <h>84</h>
+      <x>240</x>
+      <y>108</y>
+      <w>63</w>
+      <h>42</h>
     </coordinates>
-    <panel_attributes>UnidadCombateImperial
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+UnidadCombateImperial
 --
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>324</x>
-      <y>150</y>
-      <w>126</w>
-      <h>114</h>
-    </coordinates>
-    <panel_attributes>Nave
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>0</x>
-      <y>150</y>
-      <w>126</w>
-      <h>114</h>
-    </coordinates>
-    <panel_attributes>Ususario
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>162</x>
-      <y>0</y>
-      <w>60</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>/AbstractClass/
++ id_combate: str
++ clave_transmision: int
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>156</x>
-      <y>330</y>
-      <w>126</w>
-      <h>114</h>
+      <x>321</x>
+      <y>156</y>
+      <w>63</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>Nave
+--
++ nombre: str
++ catalogo_repuestos: list[str]
+--
++ ver_catalogo(): list[str]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>174</y>
+      <w>63</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+Usuario
+--
++ nombre: str
++  id_usuario: str
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>249</x>
+      <y>231</y>
+      <w>63</w>
+      <h>57</h>
     </coordinates>
     <panel_attributes>EstacionEspacial
 --
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
++tripulacion: int
++ pasaje: int
++ ubicacion: Ubicacion</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>198</x>
-      <y>258</y>
-      <w>138</w>
-      <h>78</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;110.0;210.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>444</x>
-      <y>258</y>
-      <w>168</w>
-      <h>102</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>260.0;150.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>384</x>
-      <y>258</y>
-      <w>18</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>336</x>
-      <y>348</y>
-      <w>126</w>
-      <h>114</h>
+      <x>321</x>
+      <y>237</y>
+      <w>63</w>
+      <h>57</h>
     </coordinates>
     <panel_attributes>NaveEstelar
 --
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
++ tripulacion: int
++ pasaje: int
++ clase: ClaseNaveEstelar
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>564</x>
-      <y>354</y>
-      <w>126</w>
-      <h>114</h>
+      <x>393</x>
+      <y>240</y>
+      <w>63</w>
+      <h>57</h>
     </coordinates>
     <panel_attributes>CazaEstelar
 --
--id: Long
-_-ClassAttribute: Long_
++ dotacion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>255</y>
+      <w>102</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Comandante
 --
-#Operation(i: int): int
-/+AbstractOperation()/
 --
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
++ consultar_repuesto(nombre:str, almacen:Almacen)
++ adquirir_repuesto(nombre:str, almacen: Almacen)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>114</x>
+      <y>264</y>
+      <w>117</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Operario
+--
+--
++ actualizar_stock(repuesto: Repuesto, cantidad: int)
++ registrar_repuesto(repuesto: Repuesto, almacen: Almacen)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>129</x>
+      <y>228</y>
+      <w>33</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>78</x>
+      <y>228</y>
+      <w>30</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>285</x>
+      <y>210</y>
+      <w>42</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>351</x>
+      <y>210</y>
+      <w>9</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>381</x>
+      <y>201</y>
+      <w>24</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>156</y>
+      <w>63</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>Almacen
+--
++ nombre: str
++ localizacion: str
++ catalogo_repuestos: list[Repuesto]
+--
++ buscar_repuesto(nombre: str): Repuesto
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>465</x>
+      <y>243</y>
+      <w>63</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>Repuesto
+--
++ nombre: str
++ proveedor: str
+- cantidad: int
++ precio: float
+--
++ get_cantidad(): int
++ set_cantidad(nueva_cantidad: int)
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>192</y>
+      <w>9</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>393</x>
+      <y>336</y>
+      <w>63</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+ClaseNaveEstelar
+--
+Ejecutor
+Eclipse
+Soberano</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>324</x>
+      <y>336</y>
+      <w>63</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Ubicacion
+--
+Endor
+CumuloRaimos
+NebulosaKaliida</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
