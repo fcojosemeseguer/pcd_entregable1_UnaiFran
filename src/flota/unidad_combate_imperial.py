@@ -1,4 +1,5 @@
 from utils.enumeraciones import Ubicacion, ClaseNaveEstelar
+from abc import ABC
 
 """
 Clase Unidad Combate Imperial
@@ -7,7 +8,7 @@ Clase Unidad Combate Imperial
 
 
 
-class UnidadCombateImperial():
+class UnidadCombateImperial(ABC):
     
     def __init__(self, id_combate : str , clave_transmision : int):
         
