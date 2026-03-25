@@ -33,7 +33,7 @@ class EstacionEspacial(Nave):
         
         self.tripulacion = tripulacion
         self.pasaje = pasaje
-        self.ubicacion = Ubicacion
+        self.ubicacion = ubicacion
         
         
         
@@ -45,8 +45,8 @@ class NaveEstelar(Nave):
         
         self.tripulacion = tripulacion
         self.pasaje = pasaje
-        self.clase = ClaseNaveEstelar
-        
+        self.clase = clase
+
 
 class CazaEstelar(Nave):
     

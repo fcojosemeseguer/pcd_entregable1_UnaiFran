@@ -1,7 +1,6 @@
 from abc import ABC
 from logistica.repuesto import Repuesto
-
-# from logistica.alamcen import Almacen
+from logistica.almacen import Almacen
 
 
 class Usuario(ABC):

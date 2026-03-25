@@ -2,8 +2,7 @@
 
 class Repuesto:
     
-    def __init__(self, nombre : str, proveedor : str, cantidad : str, precio : float):
-        
+    def __init__(self, nombre : str, proveedor : str, cantidad : int, precio : float):
         self.nombre = nombre
         self.proveedor = proveedor
         self.__cantidad = cantidad
